@@ -15,10 +15,10 @@ exports[`<Main /> should render the heading 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  -webkit-align-itens: center;
-  -webkit-box-align-itens: center;
-  -ms-flex-align-itens: center;
-  align-itens: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -27,7 +27,7 @@ exports[`<Main /> should render the heading 1`] = `
 
 .c1 {
   width: 25rem;
-  margin-bootom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .c2 {
@@ -36,7 +36,7 @@ exports[`<Main /> should render the heading 1`] = `
 
 .c3 {
   font-size: 2rem;
-  font-weght: 400;
+  font-weight: 400;
 }
 
 .c4 {
