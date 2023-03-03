@@ -36,7 +36,7 @@ const WrapperModdifiers = {
 export const Wrapper = styled.div<LogoProps>`
   ${({ theme, color, size, hideOnMobile }) => css`
     color: ${theme.colors[color!]};
-    ${!!size && WrapperModdifiers[size]}
-    ${!!hideOnMobile && WrapperModdifiers.hideOnMobile}
+    ${!!size && WrapperModdifiers[size]};
+    ${!!hideOnMobile && WrapperModdifiers.hideOnMobile};
   `}
 `
