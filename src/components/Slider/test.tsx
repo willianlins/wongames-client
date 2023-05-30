@@ -1,10 +1,12 @@
-import { renderWithTheme } from 'utils/tests/helpers'
+import { render, screen } from '@testing-library/react'
 
 import { Slider } from '.'
 
 describe('<Slider />', () => {
-  it('should render a white hading by default', () => {
-    renderWithTheme(<Slider></Slider>)
+  it('should render the heading', () => {
+    const {container} = render(<Slider />)
+
+    expect(screen.getByRole('heading', {name: /Slider/i})).toBeInTheDocument()
 
   })
 })
