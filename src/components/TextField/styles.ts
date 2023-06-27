@@ -67,7 +67,6 @@ const wrapperModifiers = {
     ${InputWrapper} {
       border-color: ${theme.colors.red};
     }
-
     ${Icon},
     ${Label} {
       color: ${theme.colors.red};
