@@ -12,7 +12,7 @@ export function Auth({ title, children }: AuthProps) {
     <S.Wrapper>
       <S.BannerBlock>
         <S.BannerContet>
-          <Logo />
+          <Logo id='banner'/>
           <div>
             <Heading>All your favorite games in one place</Heading>
             <S.Subtitle>
@@ -25,7 +25,7 @@ export function Auth({ title, children }: AuthProps) {
       </S.BannerBlock>
       <S.Content>
         <S.ContenWrapper>
-          <Logo color="black" size="large" />
+          <Logo id="content" color="black" size="large" />
           <Heading color="black" lineColor="secondary" lineLeft>
             {title}
           </Heading>

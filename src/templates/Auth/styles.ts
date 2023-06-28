@@ -1,4 +1,4 @@
-import styled, { css, DefaultTheme } from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 import * as HeadingStyles from 'components/Heading/styles'
@@ -6,8 +6,12 @@ import * as LogoStyle from 'components/Logo/styles'
 
 export const Wrapper = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 100vh;
+
+  ${media.greaterThan('medium')`
+    grid-templates-columns: 1fr 1fr;
+  `}
 `
 
 export const BannerBlock = styled.div`
@@ -18,6 +22,10 @@ export const BannerBlock = styled.div`
     background-position: center center;
     padding: ${theme.spacings.xxlarge} ${theme.spacings.xxlarge}
       ${theme.spacings.large};
+
+    ${media.lessThan('medium')`
+      display: none;
+    `}
 
     &:after {
       content: '';
@@ -76,6 +84,11 @@ export const Content = styled.div`
 export const ContenWrapper = styled.div`
   ${({ theme }) => css`
     width: 30rem;
+
+    ${media.greaterThan('medium')`
+      width: 36rem;
+   `}
+
     ${LogoStyle.Wrapper} {
       margin: 0 auto ${theme.spacings.xxlarge};
     }
